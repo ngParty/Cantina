@@ -1,5 +1,5 @@
 ![](https://cloud.githubusercontent.com/assets/110953/7877439/6a69d03e-0590-11e5-9fac-c614246606de.png)
-## Polymer Starter Kit
+## Cantina
 
 > A starting point for building web applications with Polymer 1.0
 
@@ -14,7 +14,7 @@
 
 ## Getting Started
 
-To take advantage of Polymer Starter Kit you need to:
+To take advantage of Cantina you need to:
 
 1. Get a copy of the code.
 2. Install the dependencies if you don't already have them.
@@ -23,19 +23,19 @@ To take advantage of Polymer Starter Kit you need to:
 
 ### Get the code
 
-[Download](https://github.com/polymerelements/polymer-starter-kit/releases/latest) and extract Polymer Starter Kit to where you want to work. The project comes in two flavours - Lite and Full.
+[Download](https://github.com/polymerelements/polymer-starter-kit/releases/latest) and extract Cantina to where you want to work. The project comes in two flavours - Lite and Full.
 
-**Beginners**: Try Polymer Starter Kit Lite. This doesn't require any extra dependencies nor knowledge of modern front-end tooling. This option is good for prototyping if you haven't build a Polymer app before.
+**Beginners**: Try Cantina Lite. This doesn't require any extra dependencies nor knowledge of modern front-end tooling. This option is good for prototyping if you haven't build a Polymer app before.
 
-**Intermediate - Advanced**: Use the full version of Polymer Starter Kit. This comes with all the build tools you'll need for testing and productionising your app so it's nice and lean. You'll need to run a few extra commands to install the tools we recommend but it's worth it to make sure your final app is super optimised.
+**Intermediate - Advanced**: Use the full version of Cantina. This comes with all the build tools you'll need for testing and productionising your app so it's nice and lean. You'll need to run a few extra commands to install the tools we recommend but it's worth it to make sure your final app is super optimised.
 
-Rob Dodson has a fantastic [PolyCast video](https://www.youtube.com/watch?v=xz-yixRxZN8) available that walks through using Polymer Starter Kit.
+Rob Dodson has a fantastic [PolyCast video](https://www.youtube.com/watch?v=xz-yixRxZN8) available that walks through using Cantina.
 
 ### Install dependencies
 
 #### Quick-start (for experienced users)
 
-With Node.js installed, run the following one liner from the root of your Polymer Starter Kit download:
+With Node.js installed, run the following one liner from the root of your Cantina download:
 
 ```sh
 npm install -g gulp bower && npm install && bower install
@@ -140,7 +140,7 @@ These style files are located in the [styles folder](app/styles/).
 
 ## Unit Testing
 
-Web apps built with Polymer Starter Kit come configured with support for [Web Component Tester](https://github.com/Polymer/web-component-tester) - Polymer's preferred tool for authoring and running unit tests. This makes testing your element based applications a pleasant experience.
+Web apps built with Cantina come configured with support for [Web Component Tester](https://github.com/Polymer/web-component-tester) - Polymer's preferred tool for authoring and running unit tests. This makes testing your element based applications a pleasant experience.
 
 [Read more](https://github.com/Polymer/web-component-tester#html-suites) about using Web Component tester.
 
@@ -150,13 +150,13 @@ Polymer uses [Bower](http://bower.io) for package management. This makes it easy
 
 ## Service Worker
 
-Polymer Starter Kit offers an optional offline experience thanks to Service Worker and the [Platinum Service Worker elements](https://github.com/PolymerElements/platinum-sw). New to Service Worker? Read the following [introduction](http://www.html5rocks.com/en/tutorials/service-worker/introduction/) to understand how it works.
+Cantina offers an optional offline experience thanks to Service Worker and the [Platinum Service Worker elements](https://github.com/PolymerElements/platinum-sw). New to Service Worker? Read the following [introduction](http://www.html5rocks.com/en/tutorials/service-worker/introduction/) to understand how it works.
 
 Our optional offline setup should work well for relatively simple applications. For more complex apps, we recommend learning how Service Worker works so that you can make the most of the Platinum Service Worker element abstractions.
 
 ### Enable Service Worker support?
 
-To enable Service Worker support for Polymer Starter Kit project use these 3 steps:
+To enable Service Worker support for Cantina project use these 3 steps:
 
 1. Uncomment Service Worker code in index.html
   ```HTML
@@ -241,16 +241,16 @@ If you find anything to still be stale, you can also try navigating to `chrome:s
 
 #### Disable Service Worker support after you enabled it
 
-If for any reason you need to disable Service Worker support after previously enabling it, you can remove it from your Polymer Starter Kit project using these 4 steps:
+If for any reason you need to disable Service Worker support after previously enabling it, you can remove it from your Cantina project using these 4 steps:
 
 1. Remove references to the platinum-sw elements from your application [index](https://github.com/PolymerElements/polymer-starter-kit/blob/master/app/index.html).
 2. Remove the two Platinum Service Worker elements (platinum-sw/..) in [app/elements/elements.html](https://github.com/PolymerElements/polymer-starter-kit/blob/master/app/elements/elements.html)
 3. Remove 'precache' from the list in the 'default' gulp task ([gulpfile.js](https://github.com/PolymerElements/polymer-starter-kit/blob/master/gulpfile.js))
-4. Navigate to `chrome://serviceworker-internals` and unregister any Service Workers registered by Polymer Starter Kit for your app just in case there's a copy of it cached.
+4. Navigate to `chrome://serviceworker-internals` and unregister any Service Workers registered by Cantina for your app just in case there's a copy of it cached.
 
 ## Yeoman support
 
-[generator-polymer](https://github.com/yeoman/generator-polymer/releases) now includes support for Polymer Starter Kit out of the box.
+[generator-polymer](https://github.com/yeoman/generator-polymer/releases) now includes support for Cantina out of the box.
 
 ## Frequently Asked Questions
 
@@ -277,7 +277,7 @@ own local setup.
 ### Where can I find the application layouts from your Google I/O 2015 talk?
 
 App layouts live in a separate repository called [app-layout-templates](https://github.com/PolymerElements/app-layout-templates).
-You can select a template and copy over the relevant parts you would like to reuse to Polymer Starter Kit.
+You can select a template and copy over the relevant parts you would like to reuse to Cantina.
 
 You will probably need to change paths to where your Iron and Paper dependencies can be found to get everything working.
 This can be done by adding them to the [`elements.html`](https://github.com/PolymerElements/polymer-starter-kit/blob/master/app/elements/elements.html) import.
@@ -335,9 +335,9 @@ If you are not using the build-blocks, but still wish for additional files (e.g 
 
 ### I'm finding the installation/tooling here overwhelming. What should I do?
 
-Don't worry! We've got your covered. Polymer Starter Kit tries to offer everything you need to build and optimize your apps for production, which is why we include the tooling we do. We realise however that our tooling setup may not be for everyone.
+Don't worry! We've got your covered. Cantina tries to offer everything you need to build and optimize your apps for production, which is why we include the tooling we do. We realise however that our tooling setup may not be for everyone.
 
-If you find that you just want the simplest setup possible, we recommend using Polymer Starter Kit light, which is available from the [Releases](https://github.com/PolymerElements/polymer-starter-kit/releases) page. This takes next to no time to setup.
+If you find that you just want the simplest setup possible, we recommend using Cantina light, which is available from the [Releases](https://github.com/PolymerElements/polymer-starter-kit/releases) page. This takes next to no time to setup.
 
 ### If you require more granular configuration of Vulcanize than polybuild provides you an option by:
 
@@ -361,4 +361,4 @@ gulp.task('vulcanize', function () {
 
 ## Contributing
 
-Polymer Starter Kit is a new project and is an ongoing effort by the Web Component community. We welcome your bug reports, PRs for improvements, docs and anything you think would improve the experience for other Polymer developers.
+Cantina is a new project and is an ongoing effort by the Web Component community. We welcome your bug reports, PRs for improvements, docs and anything you think would improve the experience for other Polymer developers.

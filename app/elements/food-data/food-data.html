@@ -1,0 +1,19 @@
+<link rel="import" href="../../bower_components/firebase-element/firebase-collection.html">
+<dom-module id="food-data">
+  <template>
+    <firebase-collection
+      location="https://cantina-ngparty.firebaseio.com/food-list"
+      data="{{foods}}">
+    </firebase-collection>
+  </template>
+  <script>
+    Polymer({
+      is: 'food-data',
+      properties: {
+        foods: {
+          notify: true
+        }
+      }
+    })
+  </script>
+</dom-module>

@@ -1,0 +1,66 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/paper-card/paper-card.html">
+<link rel="import" href="../../bower_components/paper-button/paper-button.html">
+<link rel="import" href="../../bower_components/iron-icons/iron-icons.html">
+
+
+<dom-module id="food-list">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <ul>
+      <template is="dom-repeat" items="{{items}}">
+
+        <paper-card heading="{{item.title}}" class="pink"
+                    image="images/food.jpg">
+          <div class="card-content">{{item.description}}</div>
+          <div class="card-actions">
+            <paper-button>
+              <iron-icon icon="close"></iron-icon>
+              No
+            </paper-button>
+            <paper-button>
+              <iron-icon icon="favorite"></iron-icon>
+              Yes
+            </paper-button>
+          </div>
+        </paper-card>
+
+      </template>
+    </ul>
+  </template>
+
+  <script>
+    (function () {
+      'use strict';
+
+      Polymer({
+        is: 'food-list',
+        properties: {
+          items: {
+            type: Object,
+            notify: true,
+          }
+        },
+        ready: function() {
+          // this.items = [
+          //   {
+          //     id: '45kh2kl4436541',
+          //     title: 'Smazak hranolky',
+          //     description: 'tuk v tuku'
+          //   },
+          //   {
+          //     id: '45kh2kl4436541',
+          //     title: 'Svice',
+          //     description: 'od naproti'
+          //   }
+          // ];
+        }
+      });
+    })();
+  </script>
+
+</dom-module>
