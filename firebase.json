@@ -1,0 +1,9 @@
+{
+  "firebase": "cantina-ngparty",
+  "public": "dist",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
